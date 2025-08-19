@@ -1,0 +1,41 @@
+Surname       GivenName    Username    Password    Division   Department               Title                           Extension  Email
+======================================================================================================================================================
+Alvarez       Casey        calvarez    greenday    INIGAME    Game Development         Lead Game Developer               6-2147   calvarez@initech.net
+Brennick      Harold       hbrennick   rolodex     INIGAME    Administration           Partnerships & Sales Manager      6-2154   hbrennick@initech.net
+Keezer        Steven       skeezer     postit99    INIGAME    Systems & Development    Director of Systems & Development 6-2161   skeezer@initech.net
+Lumbergh      Chip         clumberg    porsche911  INIGAME    Administration           CTO                               6-2168   clumberg@initech.net
+Patel         Brian        bpatel      bitbang     INIGAME    Game Development         Junior Developer Intern           6-2175   bpatel@initech.net
+Rourke        Jack         jrourke     labels42    INIGAME    System & Security Eng.   Lead System & Security Engineer   6-2182   jrourke@initech.net
+Torres        Melissa      mtorres     bytepunk    INIGAME    Game Development         Junior Developer Intern           6-2189   mtorres@initech.net
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Allen         Charissa     callen      forms888    INITECH    Accounts Payable         Accounts Payable Clerk            6-3214   callen@initech.net
+Armstrong     Peg          parmstro    office77    INITECH    Executive Assistant      Executive Assistant               6-3221   parmstro@initech.net
+Bennett       Julia        jbennet     email444    INITECH    Communications           Communications Specialist         6-3228   jbennet@initech.net
+Bolton        Michael      mbolton     printer7    INITECH    Development Engineering  Software Engineer                 6-3235   mbolton@initech.net
+Brooks        Diana        dbrooks     deskwork    INITECH    Reception / Front Desk   Receptionist                      6-3242   dbrooks@initech.net
+Clarke        Vanessa      vclarke     hotline7    INITECH    Helpdesk                 Helpdesk Technician               6-3249   vclarke@initech.net
+Crain         David        dcrain      docpile9    INITECH    Legal / Compliance       Compliance Officer                6-3256   dcrain@initech.net
+Daniels       Erica        edaniels    folder12    INITECH    Document Control         Document Control Clerk            6-3263   edaniels@initech.net
+Denning       Natalie      ndenning    payroll1    INITECH    Payroll                  Payroll Specialist                6-3270   ndenning@initech.net
+Gibbons       Peter        pgibbons    coffee99    INITECH    Development Engineering  Software Engineer                 6-3277   pgibbons@initech.net
+Greene        Allison      agreene     budget21    INITECH    Finance / Budgeting      Budget Analyst                    6-3284   agreene@initech.net
+Halpern       Drew         dhalpern    cubicle8    INITECH    QA / Testing             QA Analyst                        6-3291   dhalpern@initech.net
+Jennings      Laura        ljennin     coffee88    INITECH    Admin Support            Administrative Assistant          6-3298   ljennin@initech.net
+Klein         Sandra       sklein      postit22    INITECH    HR / Recruiting          Recruiter                         6-3305   sklein@initech.net
+Lawson        Heather      hlawson     closet33    INITECH    Office Supplies          Office Coordinator                6-3312   hlawson@initech.net
+Mercer        Collins      cmercer     inbox777    INITECH    Human Resources          HR Manager                        6-3319   cmercer@initech.net
+Mitchell      Kara         kmitchel    sched999    INITECH    Executive Scheduling     Executive Scheduler               6-3326   kmitchel@initech.net
+Nagheenanajar Samir        snagheen    stapler42   INITECH    Development Engineering  Software Engineer                 6-3333   snagheen@initech.net
+Porter        Bob          bporter     auditman    INITECH    Administration           Consultant                        6-3340   bporter@initech.net
+Porterfield   Rachel       rporterf    filing42    INITECH    Records / Filing         Records Clerk                     6-3347   rporterf@initech.net
+Portwood      Dom          dportwoo    memos123    INITECH    Upper Management         Senior VP                         6-3354   dportwoo@initech.net
+Randall       Ethan        erandal     faxline1    INITECH    Facilities / Operations  Facilities Coordinator            6-3361   erandal@initech.net
+Rogers        Nina         nrogers     files123    INITECH    Accounting               Senior Accountant                 6-3368   nrogers@initech.net
+Sanderson     Trevor       tsanders    outlook9    INITECH    Sales & Marketing        Marketing Associate               6-3375   tsanders@initech.net
+Slydell       Bob          bslydell    downsizr    INITECH    Administration           Consultant                        6-3382   bslydell@initech.net
+Smykowski     Tom          tsmykows    jump2car    INITECH    Customer Support         Customer Service Manager          6-3389   tsmykows@initech.net
+Vaughn        Melissa      mvaughn     badge777    INITECH    Security / Badging       Security Coordinator              6-3396   mvaughn@initech.net
+Waddams       Milton       mwaddams    firebug11   INITECH    Customer Support         Customer Support Rep              6-3403   mwaddams@initech.net
+Whitaker      Marcus       mwhitake    pager888    INITECH    IT / Infrastructure      Systems Administrator             6-3410   mwhitake@initech.net
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Lumbergh      Bill         blumberg    tpsreport   INITRODE   Administration           Division VP                       6-4521   blumberg@initech.net
