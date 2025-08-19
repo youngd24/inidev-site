@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initech Employee Directory - PDF Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        .pdf-content {
+            font-family: 'Times New Roman', serif;
+            font-size: 12px;
+            line-height: 1.4;
+            color: black;
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        
+        .company-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .date {
+            font-size: 10px;
+            font-style: italic;
+        }
+        
+        .division-header {
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 5px;
+            margin: 20px 0 10px 0;
+            border: 1px solid black;
+        }
+        
+        .employee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 10px;
+        }
+        
+        .employee-table th {
+            background-color: #e0e0e0;
+            border: 1px solid black;
+            padding: 4px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .employee-table td {
+            border: 1px solid black;
+            padding: 3px;
+            vertical-align: top;
+        }
+        
+        .employee-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            .controls {
+                display: none;
+            }
+            .pdf-content {
+                margin: 0;
+                padding: 20px;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button onclick="generatePDF()">Generate PDF</button>
+            <button onclick="window.print()">Print Preview</button>
+        </div>
+        
+        <div id="pdf-content" class="pdf-content">
+            <div class="header">
+                <div class="company-title">INITECH CORPORATION</div>
+                <div class="subtitle">Employee Directory</div>
+                <div class="date">Generated: August 19, 1999</div>
+            </div>
+            
+            <div class="division-header">INIGAME DIVISION - Game Development</div>
+            <table class="employee-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Department</th>
+                        <th>Title</th>
+                        <th>Extension</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Alvarez, Casey</td><td>calvarez</td><td>greenday</td><td>Game Development</td><td>Lead Game Developer</td><td>6-2147</td><td>calvarez@initech.net</td></tr>
+                    <tr><td>Brennick, Harold</td><td>hbrennick</td><td>rolodex</td><td>Administration</td><td>Partnerships & Sales Manager</td><td>6-2154</td><td>hbrennick@initech.net</td></tr>
+                    <tr><td>Keezer, Steven</td><td>skeezer</td><td>postit99</td><td>Systems & Development</td><td>Director of Systems & Development</td><td>6-2161</td><td>skeezer@initech.net</td></tr>
+                    <tr><td>Lumbergh, Chip</td><td>clumberg</td><td>porsche911</td><td>Administration</td><td>CTO</td><td>6-2168</td><td>clumberg@initech.net</td></tr>
+                    <tr><td>Patel, Brian</td><td>bpatel</td><td>bitbang</td><td>Game Development</td><td>Junior Developer Intern</td><td>6-2175</td><td>bpatel@initech.net</td></tr>
+                    <tr><td>Rourke, Jack</td><td>jrourke</td><td>labels42</td><td>System & Security Eng.</td><td>Lead System & Security Engineer</td><td>6-2182</td><td>jrourke@initech.net</td></tr>
+                    <tr><td>Torres, Melissa</td><td>mtorres</td><td>bytepunk</td><td>Game Development</td><td>Junior Developer Intern</td><td>6-2189</td><td>mtorres@initech.net</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="division-header">INITECH DIVISION - Corporate Operations</div>
+            <table class="employee-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Department</th>
+                        <th>Title</th>
+                        <th>Extension</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Allen, Charissa</td><td>callen</td><td>forms888</td><td>Accounts Payable</td><td>Accounts Payable Clerk</td><td>6-3214</td><td>callen@initech.net</td></tr>
+                    <tr><td>Armstrong, Peg</td><td>parmstro</td><td>office77</td><td>Executive Assistant</td><td>Executive Assistant</td><td>6-3221</td><td>parmstro@initech.net</td></tr>
+                    <tr><td>Bennett, Julia</td><td>jbennet</td><td>email444</td><td>Communications</td><td>Communications Specialist</td><td>6-3228</td><td>jbennet@initech.net</td></tr>
+                    <tr><td>Bolton, Michael</td><td>mbolton</td><td>printer7</td><td>Development Engineering</td><td>Software Engineer</td><td>6-3235</td><td>mbolton@initech.net</td></tr>
+                    <tr><td>Brooks, Diana</td><td>dbrooks</td><td>deskwork</td><td>Reception / Front Desk</td><td>Receptionist</td><td>6-3242</td><td>dbrooks@initech.net</td></tr>
+                    <tr><td>Clarke, Vanessa</td><td>vclarke</td><td>hotline7</td><td>Helpdesk</td><td>Helpdesk Technician</td><td>6-3249</td><td>vclarke@initech.net</td></tr>
+                    <tr><td>Crain, David</td><td>dcrain</td><td>docpile9</td><td>Legal / Compliance</td><td>Compliance Officer</td><td>6-3256</td><td>dcrain@initech.net</td></tr>
+                    <tr><td>Daniels, Erica</td><td>edaniels</td><td>folder12</td><td>Document Control</td><td>Document Control Clerk</td><td>6-3263</td><td>edaniels@initech.net</td></tr>
+                    <tr><td>Denning, Natalie</td><td>ndenning</td><td>payroll1</td><td>Payroll</td><td>Payroll Specialist</td><td>6-3270</td><td>ndenning@initech.net</td></tr>
+                    <tr><td>Gibbons, Peter</td><td>pgibbons</td><td>coffee99</td><td>Development Engineering</td><td>Software Engineer</td><td>6-3277</td><td>pgibbons@initech.net</td></tr>
+                    <tr><td>Greene, Allison</td><td>agreene</td><td>budget21</td><td>Finance / Budgeting</td><td>Budget Analyst</td><td>6-3284</td><td>agreene@initech.net</td></tr>
+                    <tr><td>Halpern, Drew</td><td>dhalpern</td><td>cubicle8</td><td>QA / Testing</td><td>QA Analyst</td><td>6-3291</td><td>dhalpern@initech.net</td></tr>
+                    <tr><td>Jennings, Laura</td><td>ljennin</td><td>coffee88</td><td>Admin Support</td><td>Administrative Assistant</td><td>6-3298</td><td>ljennin@initech.net</td></tr>
+                    <tr><td>Klein, Sandra</td><td>sklein</td><td>postit22</td><td>HR / Recruiting</td><td>Recruiter</td><td>6-3305</td><td>sklein@initech.net</td></tr>
+                    <tr><td>Lawson, Heather</td><td>hlawson</td><td>closet33</td><td>Office Supplies</td><td>Office Coordinator</td><td>6-3312</td><td>hlawson@initech.net</td></tr>
+                    <tr><td>Mercer, Collins</td><td>cmercer</td><td>inbox777</td><td>Human Resources</td><td>HR Manager</td><td>6-3319</td><td>cmercer@initech.net</td></tr>
+                    <tr><td>Mitchell, Kara</td><td>kmitchel</td><td>sched999</td><td>Executive Scheduling</td><td>Executive Scheduler</td><td>6-3326</td><td>kmitchel@initech.net</td></tr>
+                    <tr><td>Nagheenanajar, Samir</td><td>snagheen</td><td>stapler42</td><td>Development Engineering</td><td>Software Engineer</td><td>6-3333</td><td>snagheen@initech.net</td></tr>
+                    <tr><td>Porter, Bob</td><td>bporter</td><td>auditman</td><td>Administration</td><td>Consultant</td><td>6-3340</td><td>bporter@initech.net</td></tr>
+                    <tr><td>Porterfield, Rachel</td><td>rporterf</td><td>filing42</td><td>Records / Filing</td><td>Records Clerk</td><td>6-3347</td><td>rporterf@initech.net</td></tr>
+                    <tr><td>Portwood, Dom</td><td>dportwoo</td><td>memos123</td><td>Upper Management</td><td>Senior VP</td><td>6-3354</td><td>dportwoo@initech.net</td></tr>
+                    <tr><td>Randall, Ethan</td><td>erandal</td><td>faxline1</td><td>Facilities / Operations</td><td>Facilities Coordinator</td><td>6-3361</td><td>erandal@initech.net</td></tr>
+                    <tr><td>Rogers, Nina</td><td>nrogers</td><td>files123</td><td>Accounting</td><td>Senior Accountant</td><td>6-3368</td><td>nrogers@initech.net</td></tr>
+                    <tr><td>Sanderson, Trevor</td><td>tsanders</td><td>outlook9</td><td>Sales & Marketing</td><td>Marketing Associate</td><td>6-3375</td><td>tsanders@initech.net</td></tr>
+                    <tr><td>Slydell, Bob</td><td>bslydell</td><td>downsizr</td><td>Administration</td><td>Consultant</td><td>6-3382</td><td>bslydell@initech.net</td></tr>
+                    <tr><td>Smykowski, Tom</td><td>tsmykows</td><td>jump2car</td><td>Customer Support</td><td>Customer Service Manager</td><td>6-3389</td><td>tsmykows@initech.net</td></tr>
+                    <tr><td>Vaughn, Melissa</td><td>mvaughn</td><td>badge777</td><td>Security / Badging</td><td>Security Coordinator</td><td>6-3396</td><td>mvaughn@initech.net</td></tr>
+                    <tr><td>Waddams, Milton</td><td>mwaddams</td><td>firebug11</td><td>Customer Support</td><td>Customer Support Rep</td><td>6-3403</td><td>mwaddams@initech.net</td></tr>
+                    <tr><td>Whitaker, Marcus</td><td>mwhitake</td><td>pager888</td><td>IT / Infrastructure</td><td>Systems Administrator</td><td>6-3410</td><td>mwhitake@initech.net</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="division-header">INITRODE DIVISION</div>
+            <table class="employee-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Department</th>
+                        <th>Title</th>
+                        <th>Extension</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Lumbergh, Bill</td><td>blumberg</td><td>tpsreport</td><td>Administration</td><td>Division VP</td><td>6-4521</td><td>blumberg@initech.net</td></tr>
+                </tbody>
+            </table>
+            
+            <div style="margin-top: 30px; font-size: 8px; text-align: center; border-top: 1px solid #ccc; padding-top: 10px;">
+                <strong>CONFIDENTIAL - INITECH CORPORATION INTERNAL USE ONLY</strong><br>
+                This document contains proprietary information. Unauthorized distribution is prohibited.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function generatePDF() {
+            // Simple browser-based PDF generation using print functionality
+            // This creates a PDF that would be compatible with 1999-era readers
+            const originalTitle = document.title;
+            document.title = 'Initech_Employee_Directory_1999';
+            
+            // Hide controls for PDF generation
+            const controls = document.querySelector('.controls');
+            controls.style.display = 'none';
+            
+            // Trigger print dialog (user can save as PDF)
+            window.print();
+            
+            // Restore controls
+            controls.style.display = 'block';
+            document.title = originalTitle;
+            
+            alert('Use your browser\'s Print dialog and select "Save as PDF" to create a 1999-compatible PDF file.');
+        }
+    </script>
+</body>
+</html>
