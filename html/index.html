@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <title>INITECH SYSTEM SUPPORT</title>
+  <title>INITECH, The 90's Retro Network Experience</title>
   <style type="text/css">
     body {
       background-color: #ffffff;
@@ -31,20 +31,45 @@
       font-size: 24px;
       font-weight: bold;
     }
-    .content {
+    .netiquette {
       margin: 20px;
       padding: 10px;
       border: 2px dashed #000080;
       background-color: #f0f8ff;
     }
-    .p75 {
+    .mainpara {
       width: 75%;
       margin-left: auto;
       margin-right: auto;
-      text-align: center; /* Ensure text aligns left inside the paragraph */
+      text-align: center;             /* Ensure text aligns left inside the paragraph */
+      font-size: 12pt;                /* Larger font size compatible with IE5 */
+      line-height: 1.5;               /* Increase line spacing (adjust as needed) */      
     }
-    ul {
-      font-size: 14px;
+    .guidelines {
+      width: 50%;
+      margin: 20px auto;              /* centers the block horizontally */
+      padding: 10px;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+    }
+    .guidelines li {
+      margin-bottom: 5px;             /* adjust value as needed */
+    }    
+    .styled-table {
+      width: 50%;
+      margin: 20px auto;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+      border-collapse: collapse;
+    }
+    .styled-table th,
+    .styled-table td {
+      border: 1px solid #000080;
+      padding: 8px;
+      text-align: left;
+    }
+    .styled-table th {
+      background-color: #dbefff;
     }
     marquee {
       color: red;
@@ -66,47 +91,287 @@
 
   <!-- Main Content -->
   <div class="center">
-    <h1>INITECH, what happened next...</h1>
-    <p class="p75">
-       In February of 1999 the documentary, I mean, movie, about the company INITECH was released
-      in theaters across the known universe. At the time I had been in technology for around 5 years,
-      most of that time spent in what we affectionately refer to as "cubicle farms" so, needless to say,
-      much of it resonated with me and many, many others. This site and setup is really my homage to that
-      era of tech, it was some of the best, and worst, periods possible.
+    <h1>So, what is this?</h1>
+    <p class="mainpara">
+      Good question, and while the answer will likely morph over time as we tend to retcon more than even George
+      Lucas does, the basic answer is this: as close to a faithful representation of a mid to late 90's corporate LAN/WAN
+      we can get with a heavy bias towards 1999. Having spent much time around this era, and built multiple networks, we
+      chose to use Cisco for the network and leverage Frame Relay for the WAN aspect. T1 circuits were a very common
+      delivery mechansism at the time and is what the Frame Relay rides on. When possible period correct CSU/DSU devices
+      have been used, with one or two exceptions, mainaly due to hardware being unavailble or non-working.
     </p>
-    <p class="p75">
-       So now we set the stage, the year is 1999, inline with the release of the documentary
-      film and treats life like that, as if it were a real documentary. Given that timeline we can guess a
-      few things, first, when did the fire take place? Best guess is late 1997 or early 1998, we're going
-      to go with the latter and place our new hero about a year later, let's call it March 1999. After the
-      fire the first thing anyone would have started on is some level of business continuity and resumption
-      activities, revenue needs to be preserved which involves some level of Disaster Recovery operation:
-      <b>get systems back online ASAP</b>.
+
+    <h1>Why INITECH?</h1>
+    <p class="mainpara">
+      I suppose the basic answer is, why not? If you worked in tech in the late 90's the chances are <b>very</b> high
+      that you were employed somewhere that had things like that in Office Space. Having that as the background behind
+      this network really enables us to implement basically every stupid idea we have.
     </p>
-    <p class="p75">
-      For some reason, many of the INITECH staff, notably the system support staff, had either disappeared 
-      or opted to depart the organization leaving the system support staff at their parent company, INIVEST,
-      in a tough spot. They pulled together what people they could and hired on additional contract help,
-      mostly through personal networks. This rag tag group of geeks then scoured all of Texas trying to find
-      whatever gear they could to rebuild things back with, nearly everything burnt up in the fire. through
-      a combination of locating used gear to leveraging relationships with manufacturers, they scrounged up
-      enough to rebuild most of the office networks as well as the WAN that connects them.
-    </p>
-    <p class="p75">
-      Which brings us to that network, it's what is in front of, or available to you, right now. At the same
-      time guess what INITECH has decided they need to do? Come on, it's 99! Work with me here ... Online 
-      video games, over the Internet. We're gonna pivot to being a <b>GAME COMPANY!</b>
-    </p>
-    <img src="/images/server01.jpg" width="500" alt="Server Image" style="margin: 20px 0;">
-    <br>
   </div>
 
+  <br>
 
+  <!-- Guidelines-->
+  <br>
+  <h2 style="text-align: center; margin: 0 auto;">General Guidelines and Philosophy</h2>
+  <div class="guidelines">
+  <ul>
+  <li>Use period correct hardware and software, earlier is fine, later is not.</li>
+  <li>When period correct software is not available, don't use it.</li>
+  <li>The one area where it is ok to deviate is in the data network provider area (BU&U).</li>
+    <ul>
+      <li>In many cases we've used 2600 series routers as they were wildly popular
+        at the time, however in order to make things work we needed additional DRAM and flash
+        so we opted for slightly newer XM series units.
+      </li>
+      <li>In the network provider area, BU&U, we were limited in the hardware available today, namely
+        there is a lack of Cisco StrataCom gear. While we'd LOVE to build a real 1999 era Frame Relay
+        network, we had to compromise. In order to meet space requirements we skipped the use of real
+        CSU/DSU hardware and leverage Cisco CSU WIC cards in the Frame provider network.</li>
+    </ul>
+  </ul>
+  </div>
+
+  <!-- Hardware -->
+  <br>
+  <p class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Hardware Used</h2>
+    <table class="styled-table">
+      <tr>
+        <th>ITEM</th>
+        <th>DESCRIPTION</th>
+        <th>ERA EXCEPTION(S)</th>
+      </tr>
+
+      <!-- HEADQUARTERS -->
+      <tr>
+        <td colspan="3" style="text-align: center;"><b><u>Headquarters (Dallas)</u></b></td>
+      </tr>
+      <tr>
+        <td>Cisco 3640 Router</td>
+        <td>HQ Router</td>
+        <td>Cisco CSU WIC</td>
+      </tr>
+      <tr>
+        <td>Cisco 3500XL</td>
+        <td>HQ Core Switch</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>LinkSys</td>
+        <td>HQ Core Switch (legacy)</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco 2600</td>
+        <td>HQ Console Server</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco PIX 515</td>
+        <td>HQ Internet Firewall</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Adtran TSU 600</td>
+        <td>Legacy T1 Data CSU/DSU</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>HP E50</td>
+        <td>Netware 4.11 Server</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>HP E50</td>
+        <td>Netware 4.11 Server</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Sun SPARC 20</td>
+        <td>Solaris 7 Server</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Sun SPARC 20</td>
+        <td>SunOS 4.1.4 Server</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Compaq ML330 Gen 2</td>
+        <td>Windows NT 4 Terminal Server</td>
+        <td>Dated 2001</td>
+      </tr>
+
+      <!-- Frame Relay -->
+      <tr>
+        <td colspan="3" style="text-align: center;"><b><u>Frame Relay Provider (Regional)</u></b></td>
+      </tr>
+      <tr>
+        <td>Cisco 2600</td>
+        <td>BU&U Frame Relay Router</td>
+        <td>Cisco CSU WIC</td>
+      </tr>
+
+      <!-- INIKAUS Site -->
+      <tr>
+        <td colspan="3" style="text-align: center;"><b><u>Large Remote Site (Austin)</u></b></td>
+      </tr>
+      <tr>
+        <td>Adtran TSU600</td>
+        <td>Frame Relay CSU/DSU</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco 2600</td>
+        <td>Frame Relay Router</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco 3500XL</td>
+        <td>LAN Switch</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Compaq AP550</td>
+        <td>Dual P3 NT 4.0</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Compaq AP550</td>
+        <td>Dual P3 NT 4.0</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Dell D233</td>
+        <td>P2 Windows 98</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Dell H233</td>
+        <td>P2 Windows 98</td>
+        <td>None</td>
+      </tr>
+
+      <!-- INIKMCI Site -->
+      <tr>
+        <td colspan="3" style="text-align: center;"><b><u>Small Remote Site (Kansas City)</u></b></td>
+      </tr>
+      <tr>
+        <td>Cisco 2600</td>
+        <td>Frame Relay Router</td>
+        <td>Cisco CSU WIC</td>
+      </tr>
+      <tr>
+        <td>Cisco 2900XL</td>
+        <td>LAN Switch</td>
+        <td>None</td>
+      </tr>
+
+      <!-- INIKEDC Site -->
+      <tr>
+        <td colspan="3" style="text-align: center;"><b><u>Small Remote Site (Legacy Austin)</u></b></td>
+      </tr>
+      <tr>
+        <td>Adtran TSU120e</td>
+        <td>Frame Relay CSU/DSU</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco 2600</td>
+        <td>Frame Relay Router</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Cisco 2900XL</td>
+        <td>LAN Switch</td>
+        <td>None</td>
+      </tr>
+    </table>
+  </p>
+
+  <br>
+  <!-- Services -->
+  <p class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Network Services</h2>
+    <table class="styled-table">
+
+    <tr>
+      <td><b>Service</b></td>
+      <td><b>Host</b></td>
+      <td><b>Port</b></td>
+      <td><b>System</b></td>
+    </tr>
+    <tr><td>FTP</td><td>wedge.initech.net</td><td>21</td><td>Solaris 7</td></tr>
+    <tr><td>FTP</td><td>nws001.initech.net</td><td>21</td><td>Netware 4.11</td></tr>
+    <tr><td>Telnet</td><td>wedge.initech.net</td><td>23</td><td>Solaris 7</td></tr>
+    <tr><td>Telnet</td><td>porkins.initech.net</td><td>23</td><td>Solaris 7</td></tr>
+    <tr><td>IRC</td><td>irc.initech.net</td><td>6667</td><td>UnrealIRCd</td></tr>
+    <tr><td>AIM</td><td>aim.initech.net</td><td>xxxx</td><td>RetroAIM</td></tr>
+    <tr><td>NDS</td><td>nws001.initech.net</td><td>xxxx</td><td>xxxxxxxxxxxx</td></tr>
+    <tr><td>HTTP</td><td>wedge.initech.net</td><td>80</td><td>Apache 2</td></tr>
+    <tr><td>BBS</td><td>wedge.initech.net</td><td>1337</td><td>Citadel/UX</td></tr>
+    <tr><td>BattleNet</td><td>bnet.inigame.io</td><td>6112</td><td>PvPGN-Pro</td></tr>
+    <tr><td>TACACS</td><td>netsrv02.initech.net</td><td>49</td><td>tac_plus</td></tr>
+    <tr><td>VNC</td><td>initech.net</td><td>5900</td><td>NoVNC</td></tr>
+    <tr><td>RDP/TS</td><td>nts001.initech.net</td><td>3389</td><td>NT 4.0 TSE</td></tr>
+  </table>
+
+  <!-- Shares -->
+  <br>
+  <p class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Network Shares</h2>
+    <table class="styled-table">
+    <tr>
+      <td><b>Server</b></td>
+      <td><b>Share</b></td>
+      <td><b>Description</b></td>
+      <td><b>Path</b></td>
+    </tr>
+    <tr><td>NWS001</td><td>DATA</td><td>Various things</td><td>\\NWS001\Data</td></tr>
+    <tr><td>NWS001</td><td>DATA</td><td>Music</td><td>\\NWS001\Data\Music</td></tr>
+    <tr><td>NWS001</td><td>DATA</td><td>Software</td><td>\\NWS001\Data\Software</td></tr>
+  </table>
+
+
+  <br>
+  <!-- Services -->
+  <p class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Business Services</h2>
+    <table class="styled-table">
+  <tr>
+    <th>System</th>
+    <th>Description</th>
+    <th>Getting Access</th>
+    <th>Accessing It</th>
+  </tr>
+  <tr>
+    <td><b>Bank Management System (BMS)</b></td>
+    <td>System used to manage the internal INITECH banking system as well as to manage customer systems, emulate transactions and provide a development testing environment.</td>
+    <td>Fill out form ID-10-T, check the BMS access box, sign, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</td>
+    <td>Accessible via telnet to <tt>bms.initech.net</tt>, log in using your network username and run <tt>/export/initech/banking/bms</tt>. Credentials are available in the staff directory.</td>
+  </tr>
+  <tr>
+    <td><b>Finance &amp; Accounting System (VAPID)</b></td>
+    <td>Our finance system, payables, receivables, vendor management, credit lines, all the boring stuff accounting people seem to really get into.</td>
+    <td>Fill out form ID-10-T, sign, check the VAPID box, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</td>
+    <td>Accessible via telnet to <tt>vapid.initech.net</tt>, log in using your network username (use <tt>nrogers</tt> for this demo) and run <tt>/export/initech/finance/vapid</tt>. Username: <tt>nrogers</tt>, password is in the staff directory (other usernames give different results).</td>
+  </tr>
+  <tr>
+    <td><b>Game Server Management System (GAMO)</b></td>
+    <td>Still under development</td>
+    <td>No idea yet.</td>
+    <td>Invent it for us.</td>
+  </tr>
+</table>
+
+
+  <!-- Rules of the Road -->
+  <br>
   <div class="header">VCFMW INITECH Internet Netiquette Guide</div>
-
   <marquee behavior="alternate">Practice Good Netiquette!</marquee>
 
-  <div class="content">
+  <div class="netiquette">
     <p><b>Here are some basic rules to help you be a courteous member of this community:</b></p>
     <ul>
       <li><b>Respect others:</b> Treat online interactions with the same respect and consideration you would in face-to-face interactions.</li>
@@ -124,9 +389,6 @@
     </ul>
   </div>
 
-	<div class="center">
-    <img src="/images/vim.png" width="100" alt="VIM Logo" style="margin: 20px 0;">
-	</div>
 </body>
 </html>
 
