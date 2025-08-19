@@ -42,9 +42,9 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      text-align: center;             /* Ensure text aligns left inside the paragraph */
-      font-size: 12pt;                /* Larger font size compatible with IE5 */
-      line-height: 1.5;               /* Increase line spacing (adjust as needed) */      
+      text-align: center;
+      font-size: 12pt;
+      line-height: 1.5;
     }
     .guidelines {
       width: 80%;
@@ -54,21 +54,15 @@
       background-color: #f0f8ff;
     }
     .guidelines li {
-      margin-bottom: 5px;             /* adjust value as needed */
-    }    
-    /* IE5 compatible table centering */
-    .table-container {
-      text-align: center;
-      margin: 20px 0;
+      margin-bottom: 5px;
     }
+    /* IE5 compatible table styling - remove display:inline-table */
     .styled-table {
       width: 90%;
       border: 2px dashed #000080;
       background-color: #f0f8ff;
       border-collapse: collapse;
-      /* IE5 compatible centering - make table inline */
-      display: inline-table;
-      text-align: left; /* Reset text alignment inside table */
+      text-align: left;
     }
     .styled-table th,
     .styled-table td {
@@ -148,7 +142,8 @@
   <br>
   <div class="mainpara">
     <h2 style="text-align: center; margin: 0 auto;">Hardware Used</h2>
-    <div class="table-container">
+    <!-- IE5 compatible table centering using CENTER tag -->
+    <center>
     <table class="styled-table">
       <tr>
         <th>ITEM</th>
@@ -301,14 +296,15 @@
         <td>None</td>
       </tr>
     </table>
-    </div>
+    </center>
   </div>
 
   <br>
   <!-- Services -->
   <div class="mainpara">
     <h2 style="text-align: center; margin: 0 auto;">Network Services</h2>
-    <div class="table-container">
+    <!-- IE5 compatible table centering using CENTER tag -->
+    <center>
     <table class="styled-table">
     <tr>
       <td><b>Service</b></td>
@@ -330,14 +326,15 @@
     <tr><td>VNC</td><td>initech.net</td><td>5900</td><td>NoVNC</td></tr>
     <tr><td>RDP/TS</td><td>nts001.initech.net</td><td>3389</td><td>NT 4.0 TSE</td></tr>
     </table>
-    </div>
+    </center>
   </div>
 
   <!-- Shares -->
   <br>
   <div class="mainpara">
     <h2 style="text-align: center; margin: 0 auto;">Network Shares</h2>
-    <div class="table-container">
+    <!-- IE5 compatible table centering using CENTER tag -->
+    <center>
     <table class="styled-table">
     <tr>
       <td><b>Server</b></td>
@@ -349,14 +346,15 @@
     <tr><td>NWS001</td><td>DATA</td><td>Music</td><td>\\NWS001\Data\Music</td></tr>
     <tr><td>NWS001</td><td>DATA</td><td>Software</td><td>\\NWS001\Data\Software</td></tr>
     </table>
-    </div>
+    </center>
   </div>
 
   <br>
   <!-- Business Services -->
   <div class="mainpara">
     <h2 style="text-align: center; margin: 0 auto;">Business Services</h2>
-    <div class="table-container">
+    <!-- IE5 compatible table centering using CENTER tag -->
+    <center>
     <table class="styled-table">
   <tr>
     <th>System</th>
@@ -383,7 +381,7 @@
     <td>Invent it for us.</td>
   </tr>
     </table>
-    </div>
+    </center>
   </div>
 
   <!-- Rules of the Road -->
