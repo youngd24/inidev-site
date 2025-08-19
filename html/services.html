@@ -1,88 +1,209 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-  "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <title>Services</title>
+  <title>INITECH Services - The 90's Retro Network Experience</title>
+  <style type="text/css">
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .nav {
+      background-color: black;
+      color: lime;
+      padding: 4px;
+      font-family: monospace;
+      font-size: 12px;
+      text-align: center;
+    }
+    .nav a {
+      color: lime;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .center {
+      text-align: center;
+    }
+    .header {
+      background-color: navy;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .netiquette {
+      width: 90%;
+      margin: 20px;
+      padding: 10px;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+    }
+    .mainpara {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+    .guidelines {
+      width: 80%;
+      margin: 20px auto;
+      padding: 10px;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+    }
+    .guidelines li {
+      margin-bottom: 5px;
+    }
+    /* IE5 compatible table centering */
+    .table-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .styled-table {
+      width: 90%;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+      border-collapse: collapse;
+      /* IE5 compatible centering - make table inline */
+      display: inline-table;
+      text-align: left; /* Reset text alignment inside table */
+    }
+    .styled-table th,
+    .styled-table td {
+      border: 1px solid #000080;
+      padding: 8px;
+      text-align: left;
+    }
+    .styled-table th {
+      background-color: #dbefff;
+    }
+    marquee {
+      color: red;
+      font-weight: bold;
+    }
+    .service-section {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+      border: 2px dashed #000080;
+      background-color: #f0f8ff;
+    }
+    .service-section h3 {
+      color: #000080;
+      margin-top: 0;
+    }
+    hr {
+      border: 1px dashed #000080;
+      margin: 20px 0;
+    }
+  </style>
 </head>
-<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660099" alink="#FF0000">
-  <a name="top"></a>
+<body>
 
-  <h1>Services</h1>
-  <hr>
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <a href="/">Home</a>
+    <a href="/xfiles.html">Files</a>
+    <a href="/support.html">Support</a>
+    <a href="/phones.html">Phones</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/about.html">About</a>
+  </div>
 
-  <h2>Network Services</h2>
-  <table border="1" cellpadding="4" cellspacing="0">
-    <tr>
-      <td><b>Service</b></td>
-      <td><b>Host</b></td>
-      <td><b>Port</b></td>
-      <td><b>System</b></td>
-    </tr>
-    <tr><td>FTP</td><td>wedge.initech.net</td><td>21</td><td>Solaris 7</td></tr>
-    <tr><td>FTP</td><td>nws001.initech.net</td><td>21</td><td>Netware 4.11</td></tr>
-    <tr><td>Telnet</td><td>wedge.initech.net</td><td>23</td><td>Solaris 7</td></tr>
-    <tr><td>Telnet</td><td>porkins.initech.net</td><td>23</td><td>Solaris 7</td></tr>
-    <tr><td>IRC</td><td>irc.initech.net</td><td>6667</td><td>UnrealIRCd</td></tr>
-    <tr><td>AIM</td><td>aim.initech.net</td><td>xxxx</td><td>RetroAIM</td></tr>
-    <tr><td>NDS</td><td>nws001.initech.net</td><td>xxxx</td><td>xxxxxxxxxxxx</td></tr>
-    <tr><td>HTTP</td><td>wedge.initech.net</td><td>80</td><td>Apache 2</td></tr>
-    <tr><td>BBS</td><td>wedge.initech.net</td><td>1337</td><td>Citadel/UX</td></tr>
-    <tr><td>BattleNet</td><td>bnet.inigame.io</td><td>6112</td><td>PvPGN-Pro</td></tr>
-    <tr><td>TACACS</td><td>netsrv02.initech.net</td><td>49</td><td>tac_plus</td></tr>
-    <tr><td>VNC</td><td>initech.net</td><td>5900</td><td>NoVNC</td></tr>
-    <tr><td>RDP/TS</td><td>nts001.initech.net</td><td>3389</td><td>NT 4.0 TSE</td></tr>
-  </table>
+  <!-- Main Header -->
+  <div class="header">INITECH Network Services</div>
+  <marquee behavior="alternate">Welcome to the INITECH Service Directory!</marquee>
 
-  <hr>
+  <!-- Network Services -->
+  <div class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Network Services</h2>
+    <div class="table-container">
+      <table class="styled-table">
+        <tr>
+          <th>Service</th>
+          <th>Host</th>
+          <th>Port</th>
+          <th>System</th>
+        </tr>
+        <tr><td>FTP</td><td>wedge.initech.net</td><td>21</td><td>Solaris 7</td></tr>
+        <tr><td>FTP</td><td>nws001.initech.net</td><td>21</td><td>Netware 4.11</td></tr>
+        <tr><td>Telnet</td><td>wedge.initech.net</td><td>23</td><td>Solaris 7</td></tr>
+        <tr><td>Telnet</td><td>porkins.initech.net</td><td>23</td><td>Solaris 7</td></tr>
+        <tr><td>IRC</td><td>irc.initech.net</td><td>6667</td><td>UnrealIRCd</td></tr>
+        <tr><td>AIM</td><td>aim.initech.net</td><td>xxxx</td><td>RetroAIM</td></tr>
+        <tr><td>NDS</td><td>nws001.initech.net</td><td>xxxx</td><td>xxxxxxxxxxxx</td></tr>
+        <tr><td>HTTP</td><td>wedge.initech.net</td><td>80</td><td>Apache 2</td></tr>
+        <tr><td>BBS</td><td>wedge.initech.net</td><td>1337</td><td>Citadel/UX</td></tr>
+        <tr><td>BattleNet</td><td>bnet.inigame.io</td><td>6112</td><td>PvPGN-Pro</td></tr>
+        <tr><td>TACACS</td><td>netsrv02.initech.net</td><td>49</td><td>tac_plus</td></tr>
+        <tr><td>VNC</td><td>initech.net</td><td>5900</td><td>NoVNC</td></tr>
+        <tr><td>RDP/TS</td><td>nts001.initech.net</td><td>3389</td><td>NT 4.0 TSE</td></tr>
+      </table>
+    </div>
+  </div>
 
-  <h2>Network Shares</h2>
-  <p>Some shares available:</p>
-  <table border="1" cellpadding="4" cellspacing="0">
-    <tr>
-      <td><b>Server</b></td>
-      <td><b>Share</b></td>
-      <td><b>Description</b></td>
-      <td><b>Path</b></td>
-    </tr>
-    <tr><td>NWS001</td><td>DATA</td><td>Various things</td><td>\\NWS001\Data</td></tr>
-    <tr><td>NWS001</td><td>DATA</td><td>Music</td><td>\\NWS001\Data\Music</td></tr>
-    <tr><td>NWS001</td><td>DATA</td><td>Software</td><td>\\NWS001\Data\Software</td></tr>
-  </table>
+  <!-- Network Shares -->
+  <div class="mainpara">
+    <h2 style="text-align: center; margin: 0 auto;">Network Shares</h2>
+    <div class="table-container">
+      <table class="styled-table">
+        <tr>
+          <th>Server</th>
+          <th>Share</th>
+          <th>Description</th>
+          <th>Path</th>
+        </tr>
+        <tr><td>NWS001</td><td>DATA</td><td>Various things</td><td>\\NWS001\Data</td></tr>
+        <tr><td>NWS001</td><td>DATA</td><td>Music</td><td>\\NWS001\Data\Music</td></tr>
+        <tr><td>NWS001</td><td>DATA</td><td>Software</td><td>\\NWS001\Data\Software</td></tr>
+      </table>
+    </div>
+  </div>
 
-  <hr>
+  <!-- Business Application Services -->
+  <div class="center">
+    <h2>Business Application Services</h2>
+  </div>
 
-  <h2>Business Application Services</h2>
+  <div class="service-section">
+    <h3>Bank Management System (BMS)</h3>
+    <p><b>Description:</b><br>
+    System used to manage the internal INITECH banking system as well as to manage customer systems, emulate transactions and provide a development testing environment.</p>
 
-  <h3>Bank Management System (BMS)</h3>
-  <p><b>Description:</b><br>
-  System used to manage the internal INITECH banking system as well as to manage customer systems, emulate transactions and provide a development testing environment.</p>
+    <p><b>Getting Access:</b><br>
+    Fill out form ID-10-T, check the BMS access box, sign, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</p>
 
-  <p><b>Getting Access:</b><br>
-  Fill out form ID-10-T, check the BMS access box, sign, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</p>
+    <p><b>Accessing It:</b><br>
+    Accessible via telnet to <tt>bms.initech.net</tt>, log in using your network username and run <tt>/export/initech/banking/bms</tt>. Credentials are available in the staff directory.</p>
+  </div>
 
-  <p><b>Accessing It:</b><br>
-  Accessible via telnet to <tt>bms.initech.net</tt>, log in using your network username and run <tt>/export/initech/banking/bms</tt>. Credentials are available in the staff directory.</p>
+  <div class="service-section">
+    <h3>Finance &amp; Accounting System (VAPID)</h3>
+    <p><b>Description:</b><br>
+    Our finance system, payables, receivables, vendor management, credit lines, all the boring stuff accounting people seem to really get into.</p>
 
-  <h3>Finance &amp; Accounting System (VAPID)</h3>
-  <p><b>Description:</b><br>
-  Our finance system, payables, receivables, vendor management, credit lines, all the boring stuff accounting people seem to really get into.</p>
+    <p><b>Getting Access:</b><br>
+    Fill out form ID-10-T, sign, check the VAPID box, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</p>
 
-  <p><b>Getting Access:</b><br>
-  Fill out form ID-10-T, sign, check the VAPID box, get approval from your supervisor as well as any 3 other random people and submit to the service desk in the basement of building 17A.</p>
+    <p><b>Accessing It:</b><br>
+    Accessible via telnet to <tt>vapid.initech.net</tt>, log in using your network username (use <tt>nrogers</tt> for this demo) and run <tt>/export/initech/finance/vapid</tt>. Username: <tt>nrogers</tt>, password is in the staff directory, you can try others and get a variety of results.</p>
+  </div>
 
-  <p><b>Accessing It:</b><br>
-  Accessible via telnet to <tt>vapid.initech.net</tt>, log in using your network username (use <tt>nrogers</tt> for this demo) and run <tt>/export/initech/finance/vapid</tt>. Username: <tt>nrogers</tt>, password is in the staff directory, you can try others and get a variety of results.</p>
+  <div class="service-section">
+    <h3>Game Server Management System (GAMO)</h3>
+    <p><b>Description:</b><br>
+    Still under development</p>
 
-  <h3>Game Server Management System (GAMO)</h3>
-  <p><b>Description:</b><br>
-  Still under development</p>
+    <p><b>Getting Access:</b><br>
+    No idea yet.</p>
 
-  <p><b>Getting Access:</b><br>
-  No idea yet.</p>
+    <p><b>Accessing It:</b><br>
+    Invent it for us.</p>
+  </div>
 
-  <p><b>Accessing It:</b><br>
-  Invent it for us.</p>
+  <br>
 
 </body>
 </html>
